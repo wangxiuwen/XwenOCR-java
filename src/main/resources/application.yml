@@ -1,0 +1,13 @@
+server:
+  port: 38080
+  tomcat:
+    max-http-form-post-size: 50MB
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
